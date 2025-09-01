@@ -31,7 +31,7 @@ export default function HomeScreen() {
       alert('Número máximo de tarjetas alcanzado');
     }
   }
-  
+
   function removeCard() {
     if (cards.length > 0) {
       setCards(cards.slice(0, -1));
@@ -51,7 +51,7 @@ export default function HomeScreen() {
         <Text style={styles.removeButtonText}>Borrar tarjeta</Text>
       </Pressable>
       <Text style={[styles.infoText, styles.infoBox ]}>
-        {cards.length}/{maxCards} tarjetas
+        {cards.length}/{maxCards} tarjetas máximas
       </Text>
     </View>
   );
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#c3c6c9ff',
   },
   titleText: {
     fontSize: 20,
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
   cardBox: {
     marginTop: 30,
     padding: 30,
-    borderRadius: 5,
     width: 200,
     alignItems: 'center',
     justifyContent: 'center',
