@@ -1,5 +1,7 @@
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+// TAREA 2
+
 import React, { useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 function Card({ tarjeta }) {
   const [active, setActive] = useState(false);
