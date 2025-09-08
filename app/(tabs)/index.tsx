@@ -20,6 +20,7 @@ function Card({ tarjeta }) {
     </Pressable>
   );
 }
+
 export default function HomeScreen() {
   const [cards, setCards] = useState(['Tarjeta 1']);
   const maxCards = 3;
@@ -42,7 +43,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.titleContainer}>
-      <Text style={styles.titleText}>Esto es una aplicación sobre tarjetas</Text>
+      <Text style={styles.titleText}>Tarjetas</Text>
       {cards.map((text, index) => (
         <Card key={index} tarjeta={text} />
       ))}
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#c3c6c9ff',
+    backgroundColor: '#ffffffff',
   },
   titleText: {
     fontSize: 20,
