@@ -1,4 +1,4 @@
-import { Image } from 'expo-image';
+/* import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
@@ -108,3 +108,4 @@ const styles = StyleSheet.create({
     gap: 8,
   },
 });
+*/
